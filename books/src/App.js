@@ -1,9 +1,13 @@
 import React from 'react'
+import SearchFilter from './components/SearchFilter'
+import ProductsFilter from './components/ProductsFilter'
 
 const App = () => {
   return (
-    <div>App</div>
+    <React.Fragment>
+      <ProductsFilter />
+    </React.Fragment>
   )
 }
-
+ 
 export default App
