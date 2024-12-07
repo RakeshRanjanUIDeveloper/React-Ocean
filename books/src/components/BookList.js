@@ -1,8 +1,12 @@
 import React from 'react'
+import BookShow from './BookShow'
 
-const BookList = () => {
+const BookList = ({books, onDelete, onEdit}) => {
+  const renderBooks = books.map((book) => {
+    return <BookShow key={book.id} book={book} onDelete={onDelete} onEdit={onEdit} />
+  })
   return (
-    <div>BookList</div>
+    <div className='book-list'>{renderBooks}</div>
   )
 }
 
