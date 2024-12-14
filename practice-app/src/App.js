@@ -14,11 +14,13 @@ import NestedDropdown from './components/NestedDropdown'
 import AddressParent from './components/AddressParent'
 import ResponsiveSlider from './components/ResponsiveSlider/ResponsiveSlider'
 import ModalParent from './components/Modal/ModalParent'
+import CarouselParent from './components/Carousel/CarouselParent'
+import DropDownPaginationParent from './components/DropDownPagination/DropDownPaginationParent'
 
 const App = () => {
   return (
     <div>
-      <ModalParent />
+        <DropDownPaginationParent />
     </div>
   )
 }

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Slider.css";
+// import "./Slider.css";
 import Slide from "./Slide";
 
 const Slider = ({ images }) => {
