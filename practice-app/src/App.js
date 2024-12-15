@@ -16,11 +16,21 @@ import ResponsiveSlider from './components/ResponsiveSlider/ResponsiveSlider'
 import ModalParent from './components/Modal/ModalParent'
 import CarouselParent from './components/Carousel/CarouselParent'
 import DropDownPaginationParent from './components/DropDownPagination/DropDownPaginationParent'
-
+import Parent from './components/ChildToParentCommunication/Parent'
+import Parent1 from './components/ChildToParentCommunication/Parent1'
+import PropsDrilling from './components/PropsDrilling/Parent'
+import StateLifting from './components/StateLifting/Parent'
+import CustomHook from './components/CustomHook/CustomHook'
+import ControlledForm from './components/ControlledUncontrolled/ControlledForm'
+import UnControlledForm from './components/ControlledUncontrolled/UnControlledForm'
+import ParentComponent from './components/ContextAPI/ParentComponent'
+import ChildComponent from './components/ContextAPI/ChildComponent'
 const App = () => {
   return (
     <div>
-        <DropDownPaginationParent />
+      <ParentComponent>
+      <ChildComponent />
+    </ParentComponent>
     </div>
   )
 }
