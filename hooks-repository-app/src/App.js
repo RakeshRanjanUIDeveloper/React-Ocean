@@ -5,9 +5,9 @@ import ParentCounter from './Hooks/UseCallback/ParentCounter';
 import AccessDOM from './Hooks/UseRef/AccessDOM';
 import StoreNonUI from './Hooks/UseRef/StoreNonUI';
 import KeepPrevious from './Hooks/UseRef/KeepPrevious';
-import TodoApp from './Hooks/UseReducer/TodoApp';
+//import TodoApp from './Hooks/UseReducer/TodoApp';
 import Counter from './Hooks/UseReducer/Counter';
-
+import TodoApp from './Hooks/ReactMemo/TodoApp';
 function App() {
   return (
     <div className="App">
@@ -23,7 +23,6 @@ function App() {
         </ul>
 
         <TodoApp />
-        <Counter />
     </div>
   );
 }
