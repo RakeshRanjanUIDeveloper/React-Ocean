@@ -1,18 +1,19 @@
 import './App.css';
-import Article from './practiceset2/Article';
-import Gadgets from './practiceset2/Gadgets';
-import Greeting from './practiceset2/Greeting';
-import Phones from './practiceset2/Phones';
-import Product from './practiceset2/Product';
-import UserProfile from './practiceset2/UserProfile';
-// import About from './Assignment2/About';
-// import Article from './Assignment2/Article';
-// import Gadgets from './Assignment2/Gadgets';
-// import Greeting from './Assignment2/Greeting';
-// import Mobiles from './Assignment2/Mobiles';
-// import MyGadgets from './Assignment2/MyGadgets';
-// import Product from './Assignment2/Product';
-// import UserProfile from './Assignment2/UserProfile';
+// import Article from './practiceset2/Article';
+// import Gadgets from './practiceset2/Gadgets';
+// import Greeting from './practiceset2/Greeting';
+// import Phones from './practiceset2/Phones';
+// import Product from './practiceset2/Product';
+// import UserProfile from './practiceset2/UserProfile';
+import About from './Assignment2/About';
+import Article from './Assignment2/Article';
+import ColorPicker from './Assignment2/ColorPicker';
+import Gadgets from './Assignment2/Gadgets';
+import Greeting from './Assignment2/Greeting';
+import Mobiles from './Assignment2/Mobiles';
+import MyGadgets from './Assignment2/MyGadgets';
+import Product from './Assignment2/Product';
+import UserProfile from './Assignment2/UserProfile';
 // import EmployeeCard from './components/EmployeeCard';
 // import EmployeeDetails from './components/EmployeeDetails';
 
@@ -130,20 +131,21 @@ function App() {
        {/*<EmployeeCard name="Rakesh" designation="SE" experience="test" />
        <EmployeeDetails />
        <Greeting name='Rakesh'/>
-       <Product name='chair' price='10$'/>
+       <Product name='chair' price='10$'/>*/}
        <UserProfile user={userData}/>
        <Gadgets products={products}/>
        <Mobiles products={electronics}/>
        <Article title={title} content={content}/>
        <About heading={heading} name={name} learning={learning}/>
-       <MyGadgets products={myGadgets}/> */}
+       <MyGadgets products={myGadgets}/> 
+       <ColorPicker/>
 
-     <Greeting name="Rakesh" />
+  {/* <Greeting name="Rakesh" />
      <Product name="Mobile" price={50000} />
      <UserProfile user={userData} />
      <Gadgets products={products} />
      <Phones products={electronics} />
-     <Article title={title} content={content} />
+     <Article title={title} content={content} />*/}
     </div>
   );
 }

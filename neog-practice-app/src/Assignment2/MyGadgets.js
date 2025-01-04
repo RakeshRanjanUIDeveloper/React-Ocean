@@ -13,7 +13,8 @@ const highlight=()=>{
     <h2>MyGadgets</h2>
     {products.map(({id,name,description,price})=>
     <ol>
-    <li key={id} >Name:{name}  Description:{description} Price={price}</li>
+    
+    <li key={id} style={price>50000&&show?highlightstyle:{}} >Name:{name}  Description:{description} Price={price}</li>
    </ol>
 
 

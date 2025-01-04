@@ -4,7 +4,7 @@ const About = ({name,heading,learning}) => {
 
     const [toggle,setToggle]=useState(false)
     const showContent=()=>{
-        (toggle?setToggle(false):setToggle(true))
+        setToggle((prev)=>!prev)
     }
 
   return (
