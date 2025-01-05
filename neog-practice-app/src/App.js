@@ -1,9 +1,6 @@
 import "./App.css";
-import Bouquet from "./practiceset3/Bouquet";
-import Cars from "./practiceset3/Cars";
-import Cartoons from "./practiceset3/Cartoons";
-import CertificationStatus from "./practiceset3/CertificationStatus";
-import Flowers from "./practiceset3/Flowers";
+import Main from "./practiceset4/Main";
+
 // import About from './Assignment2/About';
 // import Article from './Assignment2/Article';
 // import ColorPicker from './Assignment2/ColorPicker';
@@ -25,9 +22,14 @@ import Flowers from "./practiceset3/Flowers";
 // import Product from "./practiceset2/Product";
 // import Todo from "./practiceset2/Todo";
 // import UserProfile from "./practiceset2/UserProfile";
-import Image from "./practiceset3/Image";
-import Ngo from "./practiceset3/Ngo";
-import Vegetables from "./practiceset3/Vegetables";
+// import Bouquet from "./practiceset3/Bouquet";
+// import Cars from "./practiceset3/Cars";
+// import Cartoons from "./practiceset3/Cartoons";
+// import CertificationStatus from "./practiceset3/CertificationStatus";
+// import Flowers from "./practiceset3/Flowers";
+// import Image from "./practiceset3/Image";
+// import Ngo from "./practiceset3/Ngo";
+// import Vegetables from "./practiceset3/Vegetables";
 
 function App() {
   const userData = {
@@ -338,12 +340,8 @@ function App() {
       <Todo todoItems={todoItems} />
       <h1>----Rakesh Practice Set 2----</h1>*/}
 
-      <h1>----Rakesh Practice Set 3----</h1>
-      <Image
-        img="https://picsum.photos/200"
-        imgHeight="200px"
-        imgWidth="250px"
-      />
+       {/*<h1>----Rakesh Practice Set 3----</h1>
+      <Image img="https://picsum.photos/200"  imgHeight="200px" imgWidth="250px" />
       <Cartoons cartoons={cartoons} />
       <Vegetables vegetables={vegetables} />
       <Bouquet bouquet={bouquet} />
@@ -351,7 +349,9 @@ function App() {
       <Ngo DonationData={DonationData} />
       <Cars cars={cars} />
       <CertificationStatus studentData={studentData} />
-      <h1>----Rakesh Practice Set 3----</h1>
+      <h1>----Rakesh Practice Set 3----</h1>*/}
+
+        <Main />
     </div>
   );
 }
