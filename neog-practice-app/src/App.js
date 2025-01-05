@@ -1,5 +1,5 @@
 import "./App.css";
-import Main from "./practiceset4/Main";
+import Main from "./practiceset5/Main";
 
 // import About from './Assignment2/About';
 // import Article from './Assignment2/Article';
@@ -30,6 +30,7 @@ import Main from "./practiceset4/Main";
 // import Image from "./practiceset3/Image";
 // import Ngo from "./practiceset3/Ngo";
 // import Vegetables from "./practiceset3/Vegetables";
+// import Main from "./practiceset4/Main";
 
 function App() {
   const userData = {
@@ -350,8 +351,14 @@ function App() {
       <Cars cars={cars} />
       <CertificationStatus studentData={studentData} />
       <h1>----Rakesh Practice Set 3----</h1>*/}
-
+     
+      {/*<h1>----Rakesh Practice Set 4----</h1>
         <Main />
+        <h1>----Rakesh Practice Set 4----</h1>*/}
+        
+        <h1>----Rakesh Practice Set 5----</h1>
+          <Main />
+        <h1>----Rakesh Practice Set 5----</h1>
     </div>
   );
 }
