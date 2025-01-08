@@ -3,7 +3,6 @@ import fakeVideoFetch from './fakeVideoFetch'
 
 const Videos = () => {
     const [allVideos, setAllVideos] = useState([]);
-
     useEffect(() =>{
         const fetchVideos = async () =>{
             try {
@@ -17,21 +16,29 @@ const Videos = () => {
         }
         fetchVideos();
     }, [])
+
+    const handleDelete = () =>{
+       if(allVideos.length > 0){
+        const updatedVideos = allVideos.slice(1);
+        setAllVideos(updatedVideos)
+       }
+    }
   return (
     <React.Fragment>
         <h2>PlayList</h2>
         <div className='video-list'>
-
             {
                 allVideos.map((video) => (
                     <div className='video'>
-                        <video className='each-video' autoPlay>
-                            <source src={video.thumbnail} type="video/mp4" />
-                        </video>
+                        <img src={video.thumbnail} />
+                        <h4>{video.title}</h4>
+                        <p><b>Views: </b>{video.views}</p>
+                        <p><b>Likes: </b>{video.likes}</p>
                     </div>
                 ))
             }
         </div>
+        <button onClick={() => handleDelete()}>Delete Video</button>
     </React.Fragment>
   )
 }

@@ -38,11 +38,24 @@
 }
 .video-list{
   display: flex;
+  gap: 1%;
 }
 .video {
   width: 20%;
+  border: 1px solid #000;
+  height: 100%;
 }
-.each-video{
-  width: 100px;
-  height: 100px;
+.posts{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:1%;
+}
+.post{
+  margin: 0 auto;
+  border: 2px solid #000;
+  width: 20%;
+}
+.post figure img{
+  width: 100%;
 }
