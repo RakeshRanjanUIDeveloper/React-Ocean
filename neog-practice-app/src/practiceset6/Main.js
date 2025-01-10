@@ -4,6 +4,9 @@ import Todos from './Todos'
 import Habits from './Habits'
 import Videos from './Videos'
 import Posts from './Posts'
+import Unarchived from './Unarchived'
+import Projects from './Projects'
+import UserProfile from './UserProfile'
 
 const Main = () => {
   return (
@@ -13,6 +16,9 @@ const Main = () => {
        <Habits />
        <Videos />
        <Posts />
+       <Unarchived />
+       <Projects />
+       <UserProfile />
     </div>
   )
 }
