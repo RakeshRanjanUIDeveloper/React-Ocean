@@ -7,6 +7,8 @@ import Posts from './Posts'
 import Unarchived from './Unarchived'
 import Projects from './Projects'
 import UserProfile from './UserProfile'
+import VideoScreen from './VideoScreen'
+import SocialMedia from './SocialMedia'
 
 const Main = () => {
   return (
@@ -19,6 +21,8 @@ const Main = () => {
        <Unarchived />
        <Projects />
        <UserProfile />
+       <VideoScreen />
+       <SocialMedia />
     </div>
   )
 }

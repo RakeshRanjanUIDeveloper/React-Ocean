@@ -23,7 +23,7 @@ const UserProfile = () => {
   return (
     <React.Fragment>
         {
-            userProfile &&
+            userProfile && 
                 <div className='user'>
                     { name ? <h2>Name Change</h2> : <h2>{userProfile.name}</h2>}
                     <p>{userProfile.email} - {userProfile.age} -{userProfile.occupation}</p>
