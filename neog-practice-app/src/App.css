@@ -59,3 +59,25 @@
 .post figure img{
   width: 100%;
 }
+.movies-list{
+  display: flex;
+  gap: 10px;
+}
+.movie {
+  border: 2px solid green;
+  background: beige;
+  box-shadow: 0 4px 4px lightgray;
+  filter: invert(1);
+  width: 18%;
+}
+.company-resources{
+  display: flex;
+  gap: 10px;
+}
+.company-resource{
+  border: 2px solid green;
+  background: beige;
+  box-shadow: 0 4px 4px lightgray;
+  filter: hue-rotate(45deg);
+  width: 18%;
+}
