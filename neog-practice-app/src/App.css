@@ -51,10 +51,13 @@
   flex-wrap: wrap;
   gap:1%;
 }
-.post, .product{
+.post, .product {
   margin: 0 auto;
   border: 2px solid #000;
   width: 23%;
+  box-shadow: 0 4px 4px #bebebe;
+  background: lightskyblue;
+  padding: 20px;
 }
 .post figure img{
   width: 100%;
@@ -111,4 +114,38 @@ button{
     justify-content: center;
     line-height: 1.5;
     padding: 6px 20px;
+    margin: 0 5px;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  background: #000;
+  z-index: 1000;
+  box-shadow: 0 15px 40px -20px rgba(40,44,63,.15);
+}
+.logo {
+  width: 50px;
+  padding: 10px;
+}
+.nav-items {
+  display: flex;
+  align-items: center;
+}
+.nav-items > ul {
+  display: flex;
+  list-style-type: none;
+}
+.nav-items > ul > li {
+  padding: 8px 20px;
+  font-size: 18px;
+  font-family: Graphik;
+}
+.nav-items > ul > li a{
+  color: #FFFFFF;
 }
