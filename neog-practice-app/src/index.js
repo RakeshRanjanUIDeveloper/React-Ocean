@@ -8,30 +8,95 @@ import Cart from './practiceset8/Cart';
 import WishList from './practiceset8/WishList';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Error from './practiceset8/Error';
+import SummaryTodos from './practiceset8/SummaryTodos';
+import DoneTodos from './practiceset8/DoneTodos';
+import OpenTodos from './practiceset8/OpenTodos';
+import IndividualTodos from './practiceset8/IndividualTodos';
+import { TodoProvider } from './practiceset8/TodoContext';
+import Home from './practiceset8/Home';
+import Questions from './practiceset8/Questions';
+import Answer from './practiceset8/Answer';
+import { ExamProvider } from './practiceset8/ExamContext';
+
+// const appRouter = createBrowserRouter([
+//   {
+//       path: '/',
+//       element: <App />, 
+//       children :[
+//           {
+//               path: '',
+//               element: <ProductListing />
+//           },
+//           {
+//               path: "cart",
+//               element: <Cart />
+//           },
+//           {
+//               path: "WishList",
+//               element: <WishList />
+//           }
+//       ],
+//     errorElement :<Error />
+
+//   }
+// ])
+// const appRouter = createBrowserRouter([
+//   {
+//       path: '/',
+//       element: (
+//         <TodoProvider>
+//           <App />
+//         </TodoProvider>
+//       ), 
+//       children :[
+//           {
+//               path: '',
+//               element: <SummaryTodos />
+//           },
+//           {
+//               path: "doneTodos",
+//               element: <DoneTodos />
+//           },
+//           {
+//               path: "openTodos",
+//               element: <OpenTodos />
+//           },
+//           {
+//             path: "individualTodos",
+//             element: <IndividualTodos />
+//         }
+//       ],
+//     errorElement :<Error />
+
+//   }
+// ])
 
 const appRouter = createBrowserRouter([
   {
       path: '/',
-      element: <App />, 
+      element: (
+        <ExamProvider>
+          <App />
+        </ExamProvider>
+      ), 
       children :[
           {
               path: '',
-              element: <ProductListing />
+              element: <Home />
           },
           {
-              path: "cart",
-              element: <Cart />
+              path: "questions",
+              element: <Questions />
           },
           {
-              path: "WishList",
-              element: <WishList />
+              path: "answer/:id",
+              element: <Answer />
           }
       ],
     errorElement :<Error />
 
   }
 ])
-
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<RouterProvider router={appRouter} />)
