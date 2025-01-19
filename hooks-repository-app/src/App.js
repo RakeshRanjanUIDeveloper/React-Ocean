@@ -22,7 +22,7 @@ function App() {
           <li>useReducer</li>
         </ul>
 
-        <TodoApp />
+    <ParentCounter />
     </div>
   );
 }

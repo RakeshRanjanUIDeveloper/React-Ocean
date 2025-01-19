@@ -14,16 +14,16 @@ const UserFilter = () => {
 const [query, setQuery] = useState("");
 const [count, setCount] = useState(0)
 // Without useMemo
-// const filteredUsers = users.filter((user) => {
-//     console.log("filtering without useMemo");
-//     return user.toLowerCase().includes(query.toLowerCase());
-//   });
+const filteredUsers = users.filter((user) => {
+    console.log("filtering without useMemo");
+    return user.toLowerCase().includes(query.toLowerCase());
+  });
 
 //with useMemo
-const filteredUsers = useMemo(() =>{
-    console.log("filtering Users...");
-    return users.filter((user) => user.toLowerCase().includes(query.toLowerCase()))
-}, [query, users]);
+// const filteredUsers = useMemo(() =>{
+//     console.log("filtering Users...");
+//     return users.filter((user) => user.toLowerCase().includes(query.toLowerCase()))
+// }, [query, users]);
 
   return (
     <React.Fragment>
