@@ -13,10 +13,14 @@ import DoneTodos from './practiceset8/DoneTodos';
 import OpenTodos from './practiceset8/OpenTodos';
 import IndividualTodos from './practiceset8/IndividualTodos';
 import { TodoProvider } from './practiceset8/TodoContext';
-import Home from './practiceset8/Home';
+// import Home from './practiceset8/Home';
 import Questions from './practiceset8/Questions';
 import Answer from './practiceset8/Answer';
 import { ExamProvider } from './practiceset8/ExamContext';
+import Home from './practiceset9/Home';
+import Inbox from './practiceset9/Inbox';
+import Sent from './practiceset9/Sent';
+import { MailProvider } from './practiceset9/MailContext';
 
 // const appRouter = createBrowserRouter([
 //   {
@@ -71,33 +75,58 @@ import { ExamProvider } from './practiceset8/ExamContext';
 //   }
 // ])
 
+// const appRouter = createBrowserRouter([
+//   {
+//       path: '/',
+//       element: (
+//         <ExamProvider>
+//           <App />
+//         </ExamProvider>
+//       ), 
+//       children :[
+//           {
+//               path: '',
+//               element: <Home />
+//           },
+//           {
+//               path: "questions",
+//               element: <Questions />
+//           },
+//           {
+//               path: "answer/:id",
+//               element: <Answer />
+//           }
+//       ],
+//     errorElement :<Error />
+
+//   }
+// ])
+
 const appRouter = createBrowserRouter([
   {
-      path: '/',
-      element: (
-        <ExamProvider>
-          <App />
-        </ExamProvider>
-      ), 
-      children :[
-          {
-              path: '',
-              element: <Home />
-          },
-          {
-              path: "questions",
-              element: <Questions />
-          },
-          {
-              path: "answer/:id",
-              element: <Answer />
-          }
-      ],
+    path:'/',
+    element: 
+      <MailProvider>
+       <App />
+      </MailProvider>
+      ,
+    children:[
+      {
+        path:'',
+        element: <Home />
+      },
+      {
+        path:'inbox',
+        element: <Inbox />
+      },
+      {
+        path:'sent/:id',
+        element: <Sent />
+      }
+    ],
     errorElement :<Error />
-
   }
 ])
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<RouterProvider router={appRouter} />)
 // root.render(
