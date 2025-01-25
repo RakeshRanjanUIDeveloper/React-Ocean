@@ -1,8 +1,9 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { BookContext } from '../components/BookContext'
 
 const Favorites = () => {
-  const {allFavorites} = useContext(BookContext)
+  const {allFavorites} = useContext(BookContext);
+  
   return (
    <React.Fragment>
    <div className="books-list">

@@ -68,9 +68,9 @@ export const fakeBookFetch = (url) => {
                             },
                         ],
                         user: {
-                            name: 'Raju',
+                            name: 'Rakesh',
                             bio: '25 din mein paisa double',
-                            img: 'https://static-koimoi.akamaized.net/wp-content/new-galleries/2022/12/',
+                            img: 'https://avatars.githubusercontent.com/u/24638176?v=4',
                         },
                     },
                 })

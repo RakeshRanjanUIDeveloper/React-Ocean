@@ -1,14 +1,17 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { BookContext } from "../components/BookContext";
 import { useNavigate } from "react-router";
 
 const AllBooks = () => {
-  const { allBooks, allFavorites, handleFavorites } = useContext(BookContext);
+  const { allBooks, allFavorites, handleFavorites, allRead, handleRead } = useContext(BookContext);
   const navigate = useNavigate();
-
-  const isFavorite = (id) => allFavorites.some((book) => book.id === id)
+  const isFavorite = (id) => allFavorites.some((book) => book.id === id);
+  const isRead = (id) => allRead.some((book) => book.id ===id)
+  console.log(allFavorites);
+ 
+  
   return (
-    <React.Fragment>
+    <div>
       <div className="books-list">
         {allBooks.map((book) => (
           <div className="book" key={book.id}>
@@ -23,10 +26,20 @@ const AllBooks = () => {
                 handleFavorites(book)
               }
             }}> {isFavorite(book.id) ? "Go to Fav" : "Add to Fav"}</button>
+
+            <button onClick={() =>{
+              if(isRead(book.id)){
+                navigate("read")
+              }else{
+                handleRead(book)
+              }
+            }}>{isRead(book.id) ? "Already Read" : "Mark As Read"}</button>
           </div>
         ))}
+        
       </div>
-    </React.Fragment>
+     
+    </div>
   );
 };
 

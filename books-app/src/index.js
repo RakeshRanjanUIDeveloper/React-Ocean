@@ -14,19 +14,19 @@ import { BookProvider } from './components/BookContext';
 export const appRouter = createBrowserRouter([
   {
     path:'/',
-    element:<App />,
+    element:<BookProvider><App/></BookProvider>,
     children: [
       {
         path:'',
-        element : <BookProvider>  <AllBooks /> </BookProvider>
+        element :   <AllBooks />
       },
       {
         path:'favorites',
-        element: <Favorites />
+        element:  <Favorites />
       },
       {
         path:'read',
-        element: <Read />
+        element:<Read />
       },
       {
         path:'profile',
