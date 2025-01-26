@@ -1,12 +1,16 @@
 import React, { useContext, useState } from "react";
 import { FoodContext } from "../components/FoodContext";
+import { useNavigate } from "react-router";
 
 const Menu = () => {
-  const { allMenu } = useContext(FoodContext);
+  const { allMenu, handleCartClick, cartMenu } = useContext(FoodContext);
   const [query, searchQuery] = useState("");
   const [showVegOnly, setShowvegOnly] = useState(false);
   const [showSpicyOnly, setShowSpicyOnly] = useState(false);
   const [sortOrder, setShowOrder] = useState(null);
+  const navigate = useNavigate();
+  const inCart = (id) => cartMenu.some((menu) => menu.id === id);
+
   const filteredMenu = allMenu
     .filter((menu) => menu.name.toLowerCase().includes(query.toLowerCase()))
     .filter((menu) => (showVegOnly ? menu.is_vegetarian === true : true))
@@ -77,7 +81,13 @@ const Menu = () => {
             <p>
               <b>Delivery Time -</b> {menu.delivery_time} mins
             </p>
-            <button>Add to Cart</button>
+            <button onClick={() => {
+              if(inCart(menu.id)){
+                navigate('/cart')
+              }else{
+                handleCartClick(menu)
+              }
+            }}>{inCart(menu.id) ? "Go to Cart" : "Add to Cart"}</button>
           </div>
         ))}
       </div>
