@@ -12,11 +12,10 @@ export const BookProvider = ({ children }) => {
   const [userInfo, setUserInfo] = useState([])
   const handleFavorites = (book) =>{
     setAllFavorites((prevFavorites) => {
-        const isFavorite = prevFavorites.some((fav) => fav.id === book)
+        const isFavorite = prevFavorites.some((fav) => fav.id === book.id)
         if(isFavorite){
             return prevFavorites;
         }
-        console.log("Adding to favorites:", book);
         return [...prevFavorites, book];
     })
   }
