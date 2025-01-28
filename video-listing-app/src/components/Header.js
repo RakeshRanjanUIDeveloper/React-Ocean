@@ -12,6 +12,7 @@ const Header = () => {
                     <li><NavLink to='videos'>Videos</NavLink></li>
                     <li><NavLink to='likedVideos'>Liked Videos</NavLink></li>
                     <li><NavLink to='watchlater'>Watch Later</NavLink></li>
+                    <li><NavLink to='individualVideo/:id'>Individual Video</NavLink></li>
                 </ul>
             </nav>
         </div>

@@ -10,6 +10,7 @@ import WatchLater from './pages/WatchLater';
 import Error from './pages/Error';
 import Home from './pages/Home';
 import { VideoProvider } from './components/VideoContext';
+import VideoDetails from './pages/VideoDetails';
 
 
 const approuter = createBrowserRouter([
@@ -32,6 +33,10 @@ const approuter = createBrowserRouter([
       {
         path:'/watchLater',
         element: <WatchLater />
+      },
+      {
+        path:'individualVideo/:id',
+        element: <VideoDetails />
       }
     ],
     errorElement: <Error />

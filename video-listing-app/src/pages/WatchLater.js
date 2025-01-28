@@ -1,8 +1,26 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { VideoContext } from '../components/VideoContext'
 
 const WatchLater = () => {
+    const {watchLaterVideos} = useContext(VideoContext);
   return (
-    <div>WatchLater</div>
+    <React.Fragment>
+    <div className="video-list">
+    {watchLaterVideos.map((video) => (
+      <div className="video" key={video.id}>
+        <video poster={video.thumbnail}>
+          <source src={video.url} />
+        </video>
+        <h2>{video.title}</h2>
+        <h2>
+          <a href={video.url} target="_blank">
+            Watch here
+          </a>
+        </h2>
+      </div>
+    ))}
+  </div>
+    </React.Fragment>
   )
 }
 

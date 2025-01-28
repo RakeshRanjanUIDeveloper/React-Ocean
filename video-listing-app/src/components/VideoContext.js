@@ -6,7 +6,28 @@ export const VideoContext = createContext();
 
 // step 2 - create provider
 export const VideoProvider = ({children}) =>{
-    const [allVideos, setAllVideos] = useState([])
+    const [allVideos, setAllVideos] = useState([]);
+    const [likedVideos, setLikedVideos] = useState([]);
+    const [watchLaterVideos, setWatchLaterVideos] = useState([]);
+
+    const handleLike = (video) =>{
+        setLikedVideos((prevLikedVideos) =>{
+            const isLiked = prevLikedVideos.some((like) => like.id === video.id);
+            if(isLiked){
+                return prevLikedVideos
+            }
+            return [...prevLikedVideos, video]
+        })
+    }
+    const handleWatchLater = (video) =>{
+        setWatchLaterVideos((prevWatchLaterVieos) =>{
+            const isWatchLater = prevWatchLaterVieos.some((watchLater) => watchLater.id === video.id);
+            if(isWatchLater){
+                return prevWatchLaterVieos
+            }
+            return [...prevWatchLaterVieos, video]
+        })
+    }
     useEffect(() =>{
         const fetchVideos = async () =>{
             try {
@@ -21,7 +42,7 @@ export const VideoProvider = ({children}) =>{
         fetchVideos();
     }, [])
     return (
-        <VideoContext.Provider value={{allVideos}}>
+        <VideoContext.Provider value={{allVideos, handleLike, likedVideos, handleWatchLater, watchLaterVideos}}>
             {children}
         </VideoContext.Provider>
     )
