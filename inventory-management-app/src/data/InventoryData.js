@@ -64,7 +64,7 @@ export const inventoryData = [
     supplier: "PlayfulMinds Toys",
     delivered: 5,
     imageUrl:
-      "https://smalltub.com/products/main/15451427001539408762Building-Blocks-Set1A.jpg",
+      "https://tse2.mm.bing.net/th?id=OIP.Q2WRT5S1oTe4RlQWhq4YXQHaHN&pid=Api&P=0&h=220",
   },
   {
     id: 6,
@@ -78,7 +78,7 @@ export const inventoryData = [
     supplier: "ZoomZoom Toys",
     delivered: 8,
     imageUrl:
-      "https://rukminim2.flixcart.com/image/850/1000/kvfkivk0/remote-control-toy/g/0/3/remot",
+      "https://sp.yimg.com/ib/th?id=OPHS.R%2bMLm0rQvZ%2fhdA474C474&o=5&pid=21.1&w=160&h=105",
   },
   {
     id: 7,
@@ -91,8 +91,7 @@ export const inventoryData = [
     sku: "KITCH003",
     supplier: "CookEase Essentials",
     delivered: 10,
-    imageUrl:
-      "https://www.anko.co.in/cdn/shop/products/71yIQACoAiL.jpg?v=1687520426",
+    imageUrl: "https://products.blains.com/600/156/1564109.webp",
   },
   {
     id: 8,
@@ -105,8 +104,7 @@ export const inventoryData = [
     sku: "CLOTH003",
     supplier: "StrideRight Sports",
     delivered: 2,
-    imageUrl:
-      "https://5.imimg.com/data5/SELLER/Default/2021/7/DU/DV/UN/26489940/kalenji-womens-run",
+    imageUrl:"https://tse1.mm.bing.net/th?id=OIP.Xpg5DUbYIQRXrrlueIstUwHaHa&pid=Api&P=0&h=220",
   },
   {
     id: 9,

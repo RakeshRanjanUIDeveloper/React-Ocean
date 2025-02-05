@@ -16,13 +16,13 @@ const Dashboard = () => {
       <h1>Inventory Dashboard</h1>
       <div className={styles["inventory-boxes"]}>
         <div className={styles["inventory-box"]}>
-          <div>{totalStock} Total Stock</div>
+          <div>{totalStock} <br />Total Stock</div>
         </div>
         <div className={styles["inventory-box"]}>
-          <div>{totalDelivered} Total Delivered</div>
+          <div>{totalDelivered} <br />Total Delivered</div>
         </div>
         <div className={styles["inventory-box"]}>
-          <div>{lowStockQunatity} Low Stock Items</div>
+          <div>{lowStockQunatity} <br />Low Stock Items</div>
         </div>
       </div>
     </React.Fragment>

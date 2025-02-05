@@ -4,6 +4,8 @@ import Dashboard from "./pages/Dashboard";
 import Departments from "./pages/Departments";
 import ProductList from "./pages/ProductList";
 import Error from "./pages/Error";
+import AddProduct from "./pages/AddProduct";
+import ProductDetail from "./pages/ProductDetail";
 
 const appRouter = createBrowserRouter([
     {
@@ -19,8 +21,16 @@ const appRouter = createBrowserRouter([
                 element: <Departments />
             },
             {
-                path:'Products',
+                path:'Products/:department',
                 element:<ProductList />
+            },
+            {
+                path:'Product/:id',
+                element: <ProductDetail />
+            },
+            {
+                path: 'AddProduct',
+                element: <AddProduct />
             }
         ],
         errorElement: <Error />
