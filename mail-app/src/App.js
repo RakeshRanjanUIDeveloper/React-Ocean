@@ -7,8 +7,12 @@ import { Outlet } from 'react-router';
 function App() {
   return (
    <React.Fragment>
-    <Header />
-    <Outlet />
+   <div className="App">
+        <Header />
+        <div className='content'>
+          <Outlet />
+        </div>
+   </div>    
    </React.Fragment>
   );
 }

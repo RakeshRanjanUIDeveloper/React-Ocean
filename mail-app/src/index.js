@@ -7,12 +7,14 @@ import { createBrowserRouter, RouterProvider } from 'react-router';
 import Inbox from './components/Inbox';
 import Spam from './components/Spam';
 import Trash from './components/Trash';
+import Error from './components/Error';
+import { MailProvider } from './components/MailProvider';
 
 
 const appRouter = createBrowserRouter([
   {
     path:'/',
-    element: <App />,
+    element: <MailProvider><App /></MailProvider>,
     children:[
       {
         path:'',
@@ -26,7 +28,8 @@ const appRouter = createBrowserRouter([
         path:'trash',
         element:<Trash />
       }
-    ]
+    ],
+    errorElement: <Error />
   }
 ])
 const root = ReactDOM.createRoot(document.getElementById('root'));

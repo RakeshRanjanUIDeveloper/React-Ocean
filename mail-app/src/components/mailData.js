@@ -1,4 +1,5 @@
-export const mails = [{
+export const mails = [
+{
    mId: 'guid-1',
    unread: false,
    isStarred: false,
