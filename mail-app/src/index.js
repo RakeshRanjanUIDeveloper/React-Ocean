@@ -9,6 +9,7 @@ import Spam from './components/Spam';
 import Trash from './components/Trash';
 import Error from './components/Error';
 import { MailProvider } from './components/MailProvider';
+import MailDetails from './components/MailDetails';
 
 
 const appRouter = createBrowserRouter([
@@ -19,6 +20,10 @@ const appRouter = createBrowserRouter([
       {
         path:'',
         element:<Inbox />
+      },
+      {
+        path:'mail/:id',
+        element: <MailDetails />
       },
       {
         path:'spam',

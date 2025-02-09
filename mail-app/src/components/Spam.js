@@ -1,9 +1,24 @@
-import React from 'react'
+import React, { useContext } from "react";
+import { MailContext } from "./MailProvider";
 
 const Spam = () => {
-  return (
-    <div>Spam</div>
-  )
-}
+  const { spamData } = useContext(MailContext); 
 
-export default Spam
+  return (
+    <div className="trash-container">
+      <h2>Spam</h2>
+      {spamData.length === 0 ? (
+        <p>No mails in Spam</p>
+      ) : (
+        spamData.map((mail) => (
+          <div className="mail" key={mail.mId}>
+            <h2>Subject: {mail.subject}</h2>
+            <p>{mail.content}</p>
+          </div>
+        ))
+      )}
+    </div>
+  );
+};
+
+export default Spam;
