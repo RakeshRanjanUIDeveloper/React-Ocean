@@ -1,3 +1,4 @@
+import React from 'react'
 const EmployeeCard = ({name, designation, workExperience}) => {
     // const {name, designation, workExperience} = props;
   return (
