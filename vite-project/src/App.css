@@ -68,3 +68,25 @@ button{
     text-align: center;
     cursor: pointer;
 }
+.todolists button{
+    display: inline;
+}
+.genre-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: nowrap;
+}
+.genre{
+    border: 2px solid red;
+    padding: 5px;
+}
+.books-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: nowrap;
+}
+.book{
+    border: 2px solid lightcoral;
+    padding: 5px;
+    font-size: 1rem;
+}
