@@ -2,6 +2,7 @@ import './App.css'
 import SetFive from './components/setfive/SetFive'
 import SetFour from './components/setfour/SetFour'
 import SetOne from './components/setone/SetOne'
+import SetSix from './components/setsix/SetSix'
 import SetThree from './components/setthree/SetThree'
 import SetTwo from './components/settwo/SetTwo'
 
@@ -11,8 +12,9 @@ function App() {
        {/* <SetOne />
         <SetTwo /> 
         <SetThree /> 
-        <SetFour />*/}
-        <SetFive />
+        <SetFour />
+        <SetFive />*/}
+        <SetSix /> 
     </div>
   )
 }

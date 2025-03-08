@@ -103,3 +103,29 @@ button{
 .user img{
     width: 100%;
 }
+.tabs-container, .video-container{
+    display: flex;
+    gap: 10px;
+    width: 100% ;
+    justify-content: space-between;
+    align-items: center;
+}
+.tab, .video{
+    width: 24%;
+    border: 2px solid green;
+    cursor: pointer;
+}
+.products-list{
+    display: flex;
+    width: 100%;
+    gap:10px;
+    text-align: center;
+    margin-top: 10px;
+}
+.product{
+    width: 33%;
+    border: 2px solid brown;
+}
+.product img{
+    width: 100%;
+}
