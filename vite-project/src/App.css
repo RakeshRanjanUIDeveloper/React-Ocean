@@ -49,7 +49,7 @@
     text-transform: capitalize;
 }
 button{
-    width: 100px;
+    width: auto;
     height: 50px;
     border: 1px solid black;
     margin: 10px;
@@ -89,4 +89,17 @@ button{
     border: 2px solid lightcoral;
     padding: 5px;
     font-size: 1rem;
+}
+.users-list {
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+.user {
+    width: 33%;
+    border: 2px solid red;
+}
+.user img{
+    width: 100%;
 }
