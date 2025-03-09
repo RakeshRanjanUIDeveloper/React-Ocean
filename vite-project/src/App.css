@@ -103,14 +103,14 @@ button{
 .user img{
     width: 100%;
 }
-.tabs-container, .video-container{
+.tabs-container, .video-container, .social-container{
     display: flex;
     gap: 10px;
     width: 100% ;
     justify-content: space-between;
     align-items: center;
 }
-.tab, .video{
+.tab, .video, .social{
     width: 24%;
     border: 2px solid green;
     cursor: pointer;
@@ -127,5 +127,20 @@ button{
     border: 2px solid brown;
 }
 .product img{
+    width: 100%;
+}
+.social-container{
+    display: flex;
+    gap: 5px;
+    width: 100% ;
+    justify-content: flex-start;
+    align-items: center;
+}
+.social{
+    width: 16.5%;
+    border: 2px solid green;
+    cursor: pointer;
+}
+.social img{
     width: 100%;
 }

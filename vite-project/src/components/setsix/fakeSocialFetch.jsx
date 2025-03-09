@@ -44,7 +44,7 @@ export const fakeSocialFetch = (url) => {
               },
               {
                 caption: "How to make sourdough bread at home",
-                src: "https://picsum.photos/300/305",
+                src: "https://picsum.photos/300/306",
                 views: 1500,
                 likes: 150,
                 category: "Bakery",
