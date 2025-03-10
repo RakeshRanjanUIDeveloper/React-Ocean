@@ -5,6 +5,7 @@ import Habbit from './Habbit'
 import Video from './Video'
 import Social from './Social'
 import Tracker from './Tracker'
+import Projects from './Projects'
 
 const SetSix = () => {
   return (
@@ -15,6 +16,7 @@ const SetSix = () => {
         <Video /> 
         <Social />
         <Tracker />
+        <Projects />
     </React.Fragment>
   )
 }
