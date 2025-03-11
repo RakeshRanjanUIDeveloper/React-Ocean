@@ -6,6 +6,9 @@ import Video from './Video'
 import Social from './Social'
 import Tracker from './Tracker'
 import Projects from './Projects'
+import UserProfile from './UserProfile'
+import VideoApi from './VideoApi'
+import SocialMedia from './SocialMedia'
 
 const SetSix = () => {
   return (
@@ -17,6 +20,9 @@ const SetSix = () => {
         <Social />
         <Tracker />
         <Projects />
+        <UserProfile />
+        <VideoApi />
+        <SocialMedia />
     </React.Fragment>
   )
 }

@@ -144,3 +144,6 @@ button{
 .social img{
     width: 100%;
 }
+.button-disable{
+    opacity: 0.2;
+}
