@@ -156,3 +156,82 @@ button{
 .movie{
     border: 1px solid rebeccapurple;
 }
+.flex-box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive Grid */
+    gap: 20px;
+    padding: 20px;
+}
+
+.flex-box {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+    border: 1px solid #e0e0e0;
+}
+
+.flex-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.flex-box p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.flex-box b {
+    color: #007bff;
+    font-size: 17px;
+}
+
+.flex-box a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.flex-box a:hover {
+    text-decoration: underline;
+}
+.drop-down {
+    width: 100%;
+    max-width: 250px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    background-color: white;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+
+    /* Custom dropdown arrow */
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' fill='%23007bff'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px;
+    appearance: none; /* Removes default OS styling */
+}
+
+.drop-down:hover {
+    border-color: #0056b3;
+}
+
+.drop-down:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 8px rgba(0, 91, 187, 0.3);
+}
+
+.drop-down option {
+    padding: 10px;
+    font-size: 16px;
+    background: white;
+    color: #333;
+}
+
