@@ -17,6 +17,12 @@ import Phones from "./components/NeogCamp/PracticeSet2/Phones";
 import Product from "./components/NeogCamp/PracticeSet2/Product";
 import Todo from "./components/NeogCamp/PracticeSet2/Todo";
 import UserProfile from "./components/NeogCamp/PracticeSet2/UserProfile";
+import Bouquet from "./components/NeogCamp/PracticeSet3/Bouquet";
+import Cars from "./components/NeogCamp/PracticeSet3/Cars";
+import Cartoon from "./components/NeogCamp/PracticeSet3/Cartoon";
+import Donation from "./components/NeogCamp/PracticeSet3/Donation";
+import Image from "./components/NeogCamp/PracticeSet3/Image";
+import Vegetables from "./components/NeogCamp/PracticeSet3/Vegetables";
 //import ProgressMain from "./components/ProgressBar/ProgressMain";
 //import SearchBar from "./components/SearchBar/SearchBar";
 function App() {
@@ -184,6 +190,45 @@ function App() {
       isCompleted: false,
     },
   ];
+
+  const bouquet = [
+    {
+      id: 1,
+      flowers: ["rose", "lily", "marigold"],
+      totalFlowers: 9,
+      price: 1400,
+    },
+    {
+      id: 2,
+      flowers: ["snapdragon", "sunflower"],
+      totalFlowers: 10,
+      price: 3400,
+    },
+  ];
+
+  const donationData = [
+    {
+      id: 1,
+      name: "Nitin",
+      Donation: 7800,
+    },
+    {
+      id: 2,
+      name: "Mehak",
+      Donation: 9500,
+    },
+    {
+      id: 3,
+      name: "Mehul",
+      Donation: 65000,
+    },
+    {
+      id: 4,
+      name: "Nina",
+      Donation: 560,
+    },
+  ];
+
   return (
     <div className="App">
       {/* <ProgressMain /> 
@@ -200,7 +245,7 @@ function App() {
       <CustomImage imageLink={imageLink} caption={caption} />
       <Products products={products} />
       <Student student={student} />
-      <Employee  />*/}
+      <Employee  />
 
       <Greeting name="Rakesh" />
       <Product name="Laptop" price={70000} />
@@ -211,7 +256,18 @@ function App() {
       <About heading={heading} name={name} learning={learning} />
       <MyGadgets myGadgets={myGadgets} />
       <ColorPicker />
-      <Todo todoItems={todoItems} />
+      <Todo todoItems={todoItems} />*/}
+
+      <Image
+        imgSrc="https://picsum.photos/200"
+        imgHeight="100px"
+        imgWidth="100px"
+      />
+      <Cartoon />
+      <Vegetables />
+      <Bouquet bouquet={bouquet} />
+      <Donation donationData={donationData} />
+      <Cars />
     </div>
   );
 }
