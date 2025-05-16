@@ -23,6 +23,7 @@ import Cartoon from "./components/NeogCamp/PracticeSet3/Cartoon";
 import Donation from "./components/NeogCamp/PracticeSet3/Donation";
 import Image from "./components/NeogCamp/PracticeSet3/Image";
 import Vegetables from "./components/NeogCamp/PracticeSet3/Vegetables";
+import Counter from "./components/PSClasses/Counter";
 //import ProgressMain from "./components/ProgressBar/ProgressMain";
 //import SearchBar from "./components/SearchBar/SearchBar";
 function App() {
@@ -268,6 +269,7 @@ function App() {
       <Bouquet bouquet={bouquet} />
       <Donation donationData={donationData} />
       <Cars />
+      <Counter />
     </div>
   );
 }
